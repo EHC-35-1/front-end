@@ -1,39 +1,82 @@
+import bankImage from "./bank.svg";
+import spyImage from "./spy.svg";
+import shieldImage from "./shield.svg";
+
 function Project() {
   return (
     <>
-      <h1>Project Page</h1>
-
-      <h2>Cryptocurrency</h2>
+      <div class="text-bg-light p-3 text-center">
+        <h1 class="display-1 fw-bold">Project Insight</h1>
+        <p>
+          In this page, you will learn about the basics of what the project is
+          centered about,<br></br>which is cryptocurrency and decentralized
+          trading platform.
+        </p>
+      </div>
+      <h2>What is crytocurrency?</h2>
       <p>
-        <strong>What is it?</strong> Cryptocurrency is a digital or virtual form
-        of currency that uses cryptography for security and operates on a
-        decentralized network called blockchain.
+        Crytocurrency is lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        id leo in vitae turpis. sit amet commodo nulla facilisi. The followings
+        are some of its characteristics:
       </p>
+      <div class="row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <img src={bankImage} alt="Spy" height="48px" width="48px" />
+              <h3 class="card-title">No centralization</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <img src={spyImage} alt="Spy" height="48px" width="48px" />
+              <h3 class="card-title">Anonymity</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img src={shieldImage} alt="Spy" height="48px" width="48px" />
+              <h3 class="card-title">Security</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>How does it work?</h2>
       <p>
-        <strong>How it works?</strong> Cryptocurrencies work on a technology
-        called blockchain, which is a distributed ledger that records all
-        transactions across a network of computers. It uses cryptography to
-        secure transactions and control the creation of new units.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
       </p>
-      <p>
-        <strong>Example</strong>: Bitcoin is a popular example of a
-        cryptocurrency. It allows peer-to-peer transactions without the need for
-        a central authority or government.
-      </p>
-
       <h2>Decentralized Trading Platform</h2>
       <p>
-        <strong>What is it?</strong> A Decentralized Trading Platform (DTP) is a
-        system that enables users to trade financial assets directly without the
-        need for intermediaries like brokers. It operates on a decentralized
-        network, providing more control and transparency to users.
-      </p>
-      <p>
-        <strong>How it works?</strong> DTPs use blockchain technology to
-        facilitate and verify transactions. Smart contracts, self-executing
-        contracts with the terms of the agreement directly written into code,
-        play a crucial role in automating and securing trades on these
-        platforms.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
       </p>
     </>
   );
