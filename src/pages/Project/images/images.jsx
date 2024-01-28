@@ -6,3 +6,4 @@ export { default as bitCoinImage } from "./bitcoin.svg";
 export { default as bnbImage } from "./bnb.svg";
 export { default as usdcImage } from "./usdc.svg";
 export { default as dogeImage } from "./doge.svg";
+export { default as DTPImage } from "./DTP.png";

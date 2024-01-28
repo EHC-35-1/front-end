@@ -2,7 +2,7 @@ const CoinsCards = ({ images }) => {
   const coins = [
     {
       image: images.bitCoinImage,
-      description: "BitCoin",
+      description: "Bitcoin",
       alt: "Bitcoin's image",
     },
     {
@@ -23,12 +23,12 @@ const CoinsCards = ({ images }) => {
   ];
 
   return (
-    <div class="row">
+    <div className="row">
       {coins.map((coin) => (
-        <div key={coin.description} class="col-md mb-2 text-center">
+        <div key={coin.description} className="col-md mb-2 text-center">
           <figure>
-            <img src={coin.image} width="75%" alt={coin.alt} />
-            <figcaption class="mt-2">{coin.description}</figcaption>
+            <img src={coin.image} style={{ width: "75%" }} alt={coin.alt} />
+            <figcaption className="mt-2">{coin.description}</figcaption>
           </figure>
         </div>
       ))}
