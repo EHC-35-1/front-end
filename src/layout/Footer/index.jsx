@@ -1,3 +1,11 @@
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaYoutube,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
+
 function Footer() {
   return (
     <footer className="bg-dark py-5 text-white">
@@ -15,26 +23,26 @@ function Footer() {
             <h4>CONTACT</h4>
             <p>308 Negra Arroyo Lane</p>
             <p>Albuquerque, New Mexico, 87104</p>
-            <p>Email: support@langbiang.com</p>
+            <p>Email: support@tigertrader.com</p>
             <p>Phone: +505 555 6789</p>
           </div>
           <div className="col-md-4">
             <h4>CONNECT WITH US</h4>
             <ul className="list-inline fs-3 text-white">
               <li className="list-inline-item px-2">
-                <i className="bi bi-facebook"></i>
+                <FaFacebook />
               </li>
               <li className="list-inline-item px-2">
-                <i className="bi bi-linkedin"></i>
+                <FaLinkedin />
               </li>
               <li className="list-inline-item px-2">
-                <i className="bi bi-youtube"></i>
+                <FaYoutube />
               </li>
               <li className="list-inline-item px-2">
-                <i className="bi bi-twitter"></i>
+                <FaTwitter />
               </li>
               <li className="list-inline-item px-2">
-                <i className="bi bi-instagram"></i>
+                <FaInstagram />
               </li>
             </ul>
           </div>
