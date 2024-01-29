@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import "./style.css";
+import "./Style.css";
 
 function ImageSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
