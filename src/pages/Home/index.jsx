@@ -2,11 +2,17 @@ import { FaGifts } from "react-icons/fa";
 
 import Newsletter from "./components/Newsletter";
 import GoogleCard from "./components/GoogleCard";
+import { useTheme } from "../../layout/ThemeContext";
 
 function Home() {
+  // eslint-disable-next-line no-unused-vars
+  const { isDarkTheme, toggleTheme } = useTheme();
+  const themeClass = isDarkTheme
+    ? "text-bg-dark bg-dark"
+    : "text-bg-light bg-body";
   return (
     <>
-      <div className="text-bg-dark bg-dark">
+      <div className={themeClass}>
         <br></br>
         <div className="container">
           <div className="row">
