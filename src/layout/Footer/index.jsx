@@ -5,10 +5,16 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
+import { useTheme } from "../ThemeContext";
 
 function Footer() {
+  // eslint-disable-next-line no-unused-vars
+  const { isDarkTheme, toggleTheme } = useTheme();
+  const themeClass = isDarkTheme
+    ? "text-bg-dark bg-secondary"
+    : "text-bg-light bg-light";
   return (
-    <footer className="bg-dark py-5 text-white">
+    <footer className={`py-5 ${themeClass}`}>
       <div className="container">
         <div className="row text-center">
           <div className="col-md-4">
@@ -28,7 +34,7 @@ function Footer() {
           </div>
           <div className="col-md-4">
             <h4>CONNECT WITH US</h4>
-            <ul className="list-inline fs-3 text-white">
+            <ul className="list-inline fs-3">
               <li className="list-inline-item px-2">
                 <FaFacebook />
               </li>
