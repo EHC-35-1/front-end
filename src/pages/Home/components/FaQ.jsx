@@ -19,8 +19,7 @@ function FaQ() {
                 aria-expanded="false"
                 aria-controls="collapseOne"
               >
-                Question 1: How do you ensure the work is original and free from
-                plagiarism?
+                Question 1: What is a cryptocurrency exchange?
               </button>
             </h2>
             <div
@@ -30,9 +29,14 @@ function FaQ() {
               data-bs-parent="#faqAccordion"
             >
               <div className="accordion-body">
-                We utilize Turnitin to check for plagiarism and ensure the
-                authenticity of our work. Each example is customized to your
-                needs.
+                <span className="text-warning">Cryptocurrency</span> exchanges
+                are digital marketplaces that enable users to buy and sell
+                cryptocurrencies like{" "}
+                <span className="text-warning">
+                  Bitcoin, Ethereum, and Tether
+                </span>
+                . The Binance exchange is the largest crypto exchange by trade
+                volume.
               </div>
             </div>
           </div>
@@ -46,8 +50,7 @@ function FaQ() {
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Question 2: How can I communicate with the expert handling my
-                homework and share my specific requirements?
+                Question 2: How to track cryptocurrency prices
               </button>
             </h2>
             <div
@@ -57,13 +60,19 @@ function FaQ() {
               data-bs-parent="#faqAccordion"
             >
               <div className="accordion-body">
-                You can communicate your specific requirements and queries via
-                email, our Facebook page, or directly on our website (coming
-                soon).
+                The easiest way to track the latest cryptocurrency prices,
+                trading volumes, trending altcoins, and market cap is the
+                <span className="text-warning">
+                  Binance Cryptocurrency Directory
+                </span>
+                . Click on the coins to know historical coin prices, 24-hour
+                trading volume, and the price of cryptocurrencies like{" "}
+                <span className="text-warning">Bitcoin, Ethereum, BNB</span> and
+                others in real-time.
               </div>
             </div>
           </div>
-          <div className="accordion-item">
+          {/* <div className="accordion-item">
             <h2 className="accordion-header" id="headingThree">
               <button
                 className="accordion-button collapsed"
@@ -73,8 +82,7 @@ function FaQ() {
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Question 3: What is your policy for revisions if I'm not
-                satisfied with the work provided?
+                Question 3:
               </button>
             </h2>
             <div
@@ -83,12 +91,7 @@ function FaQ() {
               aria-labelledby="headingThree"
               data-bs-parent="#faqAccordion"
             >
-              <div className="accordion-body">
-                Depending on your responsibility model, you can request
-                revisions within 10 days before the delivery date. Our models
-                include non-responsibility, shared-responsibility, and
-                full-responsibility, each with specific revision options.
-              </div>
+              <div className="accordion-body">qs3-ans</div>
             </div>
           </div>
           <div className="accordion-item">
@@ -101,8 +104,7 @@ function FaQ() {
                 aria-expanded="false"
                 aria-controls="collapseFour"
               >
-                Question 4: Do you provide refunds if the work doesn't meet my
-                expectations?
+                Question 4:
               </button>
             </h2>
             <div
@@ -111,14 +113,9 @@ function FaQ() {
               aria-labelledby="headingFour"
               data-bs-parent="#faqAccordion"
             >
-              <div className="accordion-body">
-                Yes, we offer refunds. However, please note that we cannot
-                accept refund requests if the work has been submitted by someone
-                else. Our service provides personalized guidance and examples to
-                help you learn, maintaining academic integrity is essential.
-              </div>
+              <div className="accordion-body">qs4-ans</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

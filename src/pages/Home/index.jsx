@@ -55,6 +55,7 @@ function Home() {
         <div className="container">
           <FaQ />
         </div>
+        <br></br>
       </div>
     </>
   );
