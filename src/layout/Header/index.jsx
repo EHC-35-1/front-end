@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { FaCog } from "react-icons/fa"; // Import the settings icon from react-icons
+import { useTheme } from "../ThemeContext";
 
 // eslint-disable-next-line react/prop-types
-function Header({ isDarkTheme, toggleTheme }) {
+function Header() {
+  const { isDarkTheme, toggleTheme } = useTheme();
   const themeClass = isDarkTheme
     ? "navbar-dark bg-dark"
     : "navbar-light bg-light";
@@ -23,7 +25,7 @@ function Header({ isDarkTheme, toggleTheme }) {
           <FaCog className="navbar-toggler-icon" />
         </button>
 
-        {/* Your Logo */}
+        {/* Placeholder Logo */}
         <Link className="navbar-brand" to="/">
           Your Logo
         </Link>
