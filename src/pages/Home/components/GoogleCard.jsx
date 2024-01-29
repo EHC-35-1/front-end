@@ -5,7 +5,7 @@ import { useTheme } from "../../../layout/ThemeContext";
 function GoogleCard() {
   // eslint-disable-next-line no-unused-vars
   const { isDarkTheme, toggleTheme } = useTheme();
-  const themeClass = isDarkTheme ? " bg-dark" : " bg-body";
+  const themeClass = isDarkTheme ? "bg-dark" : "bg-body";
   return (
     <>
       <Card style={{ width: "80px" }} className={themeClass}>

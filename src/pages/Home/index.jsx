@@ -2,6 +2,8 @@ import { FaGifts } from "react-icons/fa";
 
 import Newsletter from "./components/Newsletter";
 import GoogleCard from "./components/GoogleCard";
+import PriceCard from "./components/PriceCard";
+import NewsCard from "./components/NewsCard";
 import { useTheme } from "../../layout/ThemeContext";
 
 function Home() {
@@ -33,7 +35,11 @@ function Home() {
               </p>
               <GoogleCard />
             </div>
-            <div className="col-lg-6"></div>
+            <div className="col-lg-6">
+              <PriceCard />
+              <br></br>
+              <NewsCard />
+            </div>
           </div>
         </div>
       </div>
