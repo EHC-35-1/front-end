@@ -1,0 +1,11 @@
+.faq-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .page-wrap {
+    margin: auto;
+    max-width: 800px;
+    min-height: 100vh;
+  }

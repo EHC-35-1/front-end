@@ -1,10 +1,13 @@
-import { FaGifts } from "react-icons/fa";
-
-import Newsletter from "./components/Newsletter";
-import GoogleCard from "./components/GoogleCard";
-import PriceCard from "./components/PriceCard";
-import NewsCard from "./components/NewsCard";
-import { useTheme } from "../../layout/ThemeContext";
+import {
+  FaGifts,
+  Newsletter,
+  GoogleCard,
+  PriceCard,
+  NewsCard,
+  ImageSlider,
+  useTheme,
+  FaQ,
+} from "./ComponentImport";
 
 function Home() {
   // eslint-disable-next-line no-unused-vars
@@ -41,6 +44,16 @@ function Home() {
               <NewsCard />
             </div>
           </div>
+        </div>
+        <br></br>
+        <div className="container">
+          <div className="row">
+            <ImageSlider />
+          </div>
+        </div>
+        <br></br>
+        <div className="container">
+          <FaQ />
         </div>
       </div>
     </>
