@@ -1,6 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 
-import { Home, About, Project, NotFound } from "./pages";
+import {
+  Home,
+  About,
+  Project,
+  NotFound,
+  TradePage,
+  RegisterPage,
+} from "./pages";
 import { Header, Footer, ThemeProvider } from "./layout";
 
 function App() {
@@ -12,6 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/trade" element={<TradePage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -61,7 +61,7 @@ function FaQ() {
             >
               <div className="accordion-body">
                 The easiest way to track the latest cryptocurrency prices,
-                trading volumes, trending altcoins, and market cap is the
+                trading volumes, trending altcoins, and market cap is the{" "}
                 <span className="text-warning">
                   Binance Cryptocurrency Directory
                 </span>

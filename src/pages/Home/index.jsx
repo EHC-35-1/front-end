@@ -7,6 +7,7 @@ import {
   ImageSlider,
   useTheme,
   FaQ,
+  TradeBanner,
 } from "./ComponentImport";
 
 function Home() {
@@ -54,6 +55,11 @@ function Home() {
         <br></br>
         <div className="container">
           <FaQ />
+        </div>
+
+        <div className="container">
+          <hr></hr>
+          <TradeBanner />
         </div>
         <br></br>
       </div>
