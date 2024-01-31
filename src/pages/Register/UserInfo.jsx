@@ -1,6 +1,6 @@
-import { Col, Form, Row } from "react-bootstrap";
+import { Col, Form, Row, Button } from "react-bootstrap";
 
-function UserInfo({ formData, setFormData }) {
+function UserInfo({ formData, setFormData, setPage }) {
   return (
     <>
       <Row className="mb-3">
@@ -41,6 +41,29 @@ function UserInfo({ formData, setFormData }) {
           }
         />
       </Form.Group>
+      <div className="d-flex justify-content-center">
+        <Button
+          className="mx-3"
+          size="md"
+          variant="secondary"
+          onClick={() => setPage((currPage) => currPage - 1)}
+          style={{ width: "30%" }}
+        >
+          Prev
+        </Button>
+        <Button
+          className="mx-3"
+          size="md"
+          variant="primary"
+          onClick={(event) => {
+            event.preventDefault();
+            setPage((currPage) => currPage + 1);
+          }}
+          style={{ width: "30%" }}
+        >
+          Next
+        </Button>
+      </div>
     </>
   );
 }
