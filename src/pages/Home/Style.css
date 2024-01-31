@@ -3,10 +3,10 @@ body {
     font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
-  [class^="number-slide"],
-  [class*=" number-slide"] {
+[class^="number-slide"],
+[class*=" number-slide"] {
     background: grey;
     display: flex;
     align-items: center;
@@ -17,83 +17,83 @@ body {
     height: 300px;
     max-height: 100vh;
     border-radius: 30px;
-  }
+}
 
-  .number-slide1 {
+.number-slide1 {
     background: rgb(64, 175, 255);
     background: linear-gradient(
-      128deg,
-      rgba(64, 175, 255, 1) 0%,
-      rgba(63, 97, 255, 1) 100%
+        128deg,
+        rgba(64, 175, 255, 1) 0%,
+        rgba(63, 97, 255, 1) 100%
     );
     border-radius: 30px;
-  }
+}
 
-  .number-slide2 {
+.number-slide2 {
     background: rgb(255, 75, 64);
     background: linear-gradient(
-      128deg,
-      rgba(255, 154, 63, 1) 0%,
-      rgba(255, 75, 64, 1) 100%
+        128deg,
+        rgba(255, 154, 63, 1) 0%,
+        rgba(255, 75, 64, 1) 100%
     );
     border-radius: 30px;
-  }
+}
 
-  .number-slide3 {
+.number-slide3 {
     background: rgb(182, 255, 64);
     background: linear-gradient(
-      128deg,
-      rgba(182, 255, 64, 1) 0%,
-      rgba(63, 255, 71, 1) 100%
+        128deg,
+        rgba(182, 255, 64, 1) 0%,
+        rgba(63, 255, 71, 1) 100%
     );
     background: linear-gradient(
-      128deg,
-      rgba(189, 255, 83, 1) 0%,
-      rgba(43, 250, 82, 1) 100%
+        128deg,
+        rgba(189, 255, 83, 1) 0%,
+        rgba(43, 250, 82, 1) 100%
     );
     border-radius: 30px;
-  }
+}
 
-  .number-slide4 {
+.number-slide4 {
     background: rgb(64, 255, 242);
     background: linear-gradient(
-      128deg,
-      rgba(64, 255, 242, 1) 0%,
-      rgba(63, 188, 255, 1) 100%
+        128deg,
+        rgba(64, 255, 242, 1) 0%,
+        rgba(63, 188, 255, 1) 100%
     );
     border-radius: 30px;
-  }
+}
 
-  .number-slide5 {
+.number-slide5 {
     background: rgb(255, 64, 156);
     background: linear-gradient(
-      128deg,
-      rgba(255, 64, 156, 1) 0%,
-      rgba(255, 63, 63, 1) 100%
+        128deg,
+        rgba(255, 64, 156, 1) 0%,
+        rgba(255, 63, 63, 1) 100%
     );
     border-radius: 30px;
-  }
-  .number-slide6 {
+}
+.number-slide6 {
     background: rgb(64, 76, 255);
     background: linear-gradient(
-      128deg,
-      rgba(64, 76, 255, 1) 0%,
-      rgba(174, 63, 255, 1) 100%
+        128deg,
+        rgba(64, 76, 255, 1) 0%,
+        rgba(174, 63, 255, 1) 100%
     );
     border-radius: 30px;
-  }
+}
 
-  .navigation-wrapper {
+.navigation-wrapper {
     position: relative;
-  }
+}
 
-  .dots {
+.dots {
     display: flex;
     padding: 10px 0;
     justify-content: center;
-  }
+}
 
-  .dot {
+.dot {
     border: none;
     width: 10px;
     height: 10px;
@@ -102,17 +102,17 @@ body {
     margin: 0 5px;
     padding: 5px;
     cursor: pointer;
-  }
+}
 
-  .dot:focus {
+.dot:focus {
     outline: none;
-  }
+}
 
-  .dot.active {
+.dot.active {
     background: #000;
-  }
+}
 
-  .arrow {
+.arrow {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -121,17 +121,17 @@ body {
     -webkit-transform: translateY(-50%);
     fill: #fff;
     cursor: pointer;
-  }
+}
 
-  .arrow--left {
+.arrow--left {
     left: 20px;
-  }
+}
 
-  .arrow--right {
+.arrow--right {
     left: auto;
     right: 20px;
-  }
+}
 
-  .arrow--disabled {
+.arrow--disabled {
     fill: rgba(255, 255, 255, 0.5);
-  }
+}

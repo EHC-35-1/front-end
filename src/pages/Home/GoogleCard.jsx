@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
 import { FcGoogle } from "react-icons/fc";
-import { useTheme } from "../../layout/ThemeContext";
+import { useTheme } from "~/layouts/ThemeContext";
 
 function GoogleCard() {
     // eslint-disable-next-line no-unused-vars

@@ -1,8 +1,10 @@
 import "./faq.css";
-import { useTheme } from "~/layout/ThemeContext";
+import { useTheme } from "~/layouts/ThemeContext";
+
 function FaQ() {
     const { isDarkTheme, toggleTheme } = useTheme();
     const themeClass = isDarkTheme ? "dark" : "light";
+
     return (
         <>
             <div className="faq-section page-wrap" data-bs-theme={themeClass}>

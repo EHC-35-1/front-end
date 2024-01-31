@@ -1,7 +1,7 @@
 import { images } from "~/assets";
 
 import CoinsCards from "./coins";
-import { useTheme } from "../../layout/ThemeContext";
+import { useTheme } from "~/layouts/ThemeContext";
 
 function Project() {
     // eslint-disable-next-line no-unused-vars

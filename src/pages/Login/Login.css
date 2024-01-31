@@ -1,9 +1,9 @@
-.wrapper {
+.login__wrapper {
     height: 100%;
     background-color: green;
 }
 
-.inner {
+.login__inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     background-color: red;
 }
 
-.content {
+.login__content {
     height: 800px;
     width: 600px;
     background-color: blue;
