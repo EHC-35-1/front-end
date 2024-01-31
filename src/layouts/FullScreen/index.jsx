@@ -1,8 +1,8 @@
 function FullScreen({ children }) {
     return (
-        <div className="wrapper">
-            <div className="inner">
-                <div className="content">{children}</div>
+        <div className="layout__wrapper">
+            <div className="layout__inner">
+                <div className="layout__content">{children}</div>
             </div>
         </div>
     );
