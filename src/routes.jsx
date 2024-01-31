@@ -1,4 +1,4 @@
-import { FullScreen } from "./layouts";
+import { FullScreen, Standard } from "./layouts";
 import {
     Home,
     About,
@@ -10,13 +10,13 @@ import {
 } from "./pages";
 
 export const publicRoutes = [
-    { path: "/", component: Home },
-    { path: "/about", component: About },
-    { path: "/project", component: Project },
-    { path: "/trade", component: Trade },
+    { path: "/", component: Home, layout: Standard },
+    { path: "/about", component: About, layout: Standard },
+    { path: "/project", component: Project, layout: Standard },
+    { path: "/trade", component: Trade, layout: Standard },
     { path: "/login", component: Login, layout: FullScreen },
-    { path: "/*", component: NotFound },
-    { path: "/register", component: Register },
+    { path: "/*", component: NotFound, layout: Standard },
+    { path: "/register", component: Register, layout: Standard },
 ];
 
 export const privateRoutes = [];

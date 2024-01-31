@@ -5,7 +5,7 @@ import CreateAccount from "./CreateAccount";
 import UserInfo from "./UserInfo";
 import Confirmation from "./Confirmation";
 
-import { useTheme } from "~/components";
+import { useTheme } from "~/layouts";
 
 function RegisterPage() {
     // Theme constants
