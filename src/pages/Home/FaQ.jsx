@@ -1,7 +1,6 @@
 import "./faq.css";
-import { useTheme } from "../../layout/ThemeContext";
+import { useTheme } from "~/layout/ThemeContext";
 function FaQ() {
-    // eslint-disable-next-line no-unused-vars
     const { isDarkTheme, toggleTheme } = useTheme();
     const themeClass = isDarkTheme ? "dark" : "light";
     return (
@@ -127,4 +126,5 @@ function FaQ() {
         </>
     );
 }
+
 export default FaQ;
