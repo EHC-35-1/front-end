@@ -4,7 +4,7 @@ import { FaGoogle, FaApple } from "react-icons/fa"; // Import FontAwesome icons
 
 function Login() {
   return (
-    <div className="wrapper">
+    <div className="login__wrapper">
       <Form
         className="p-5 round bg-light text-center"
         style={{ width: "450px" }}
@@ -24,7 +24,7 @@ function Login() {
             Log in
           </Button>
         </div>
-        <div className="divider d-flex align-items-center my-4">
+        <div className="login__divider d-flex align-items-center my-4">
           <p className="text-center fw-bold mx-3 mb-0">OR</p>
         </div>
         <div className="d-grid-gap-2 mb-2">
