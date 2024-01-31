@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useTheme } from "../../layout/ThemeContext";
+import { useTheme } from "~/layouts/ThemeContext";
 
 function PriceCard() {
     // eslint-disable-next-line no-unused-vars

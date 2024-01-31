@@ -1,33 +1,31 @@
 import { Route, Routes } from "react-router-dom";
 
-import {
-    Home,
-    About,
-    Project,
-    NotFound,
-    Trade,
-    Register,
-    Login,
-} from "./pages";
-import { Header, Footer, ThemeProvider } from "./layout";
+import { ThemeProvider, Standard } from "./layouts";
+import { publicRoutes } from "./routes";
 
 function App() {
     return (
-        <>
-            <ThemeProvider>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/project" element={<Project />} />
-                    <Route path="/trade" element={<Trade />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/*" element={<NotFound />} />
-                </Routes>
-                <Footer />
-            </ThemeProvider>
-        </>
+        <ThemeProvider>
+            <Routes>
+                {/* To add to page, go to src/routes.jsx */}
+                {publicRoutes.map((route, index) => {
+                    const Layout = route.layout ? route.layout : Standard;
+                    const Page = route.component;
+
+                    return (
+                        <Route
+                            key={index}
+                            path={route.path}
+                            element={
+                                <Layout>
+                                    <Page />
+                                </Layout>
+                            }
+                        />
+                    );
+                })}
+            </Routes>
+        </ThemeProvider>
     );
 }
 

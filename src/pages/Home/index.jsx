@@ -1,5 +1,5 @@
 import { FaGifts } from "react-icons/fa";
-import { useTheme } from "~/layout/ThemeContext";
+import { useTheme } from "~/layouts/ThemeContext";
 
 import Newsletter from "./Newsletter";
 import GoogleCard from "./GoogleCard";

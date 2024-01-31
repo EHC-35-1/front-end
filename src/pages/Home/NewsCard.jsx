@@ -1,4 +1,4 @@
-import { useTheme } from "../../layout/ThemeContext";
+import { useTheme } from "~/layouts/ThemeContext";
 
 function NewsCard() {
     // eslint-disable-next-line no-unused-vars
