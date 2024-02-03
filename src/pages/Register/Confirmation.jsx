@@ -36,7 +36,7 @@ function Confirmation({ formData, setPage }) {
           </ListGroup>
 
           <p>
-            By creating an account, I agree to Hoe Trading's{" "}
+            By creating an account, I agree to Methaptamin's{" "}
             <u className="text-primary">Terms of Service</u> and{" "}
             <u className="text-primary">Privacy Policy</u>.
           </p>
