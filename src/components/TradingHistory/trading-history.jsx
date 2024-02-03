@@ -1,12 +1,13 @@
 const TradingHistoryTable = ({ data }) => {
-  const renderRowStyle = (row) => {
-    const sideLowerCase = row.side.toLowerCase();
+  const renderCellStyle = (value) => {
+    const sideLowerCase = value.toLowerCase();
+    const backgroundColor = sideLowerCase === "buy" ? "#46cf76" : "#F02F4A";
     return {
-      backgroundColor: sideLowerCase === "buy" ? "#46cf76" : "#F02F4A",
+      backgroundColor,
     };
   };
 
-  const columnNum = 6;
+  const columnNum = 5;
   const columnWidth = `${100 / columnNum}%`;
 
   return (
@@ -20,22 +21,22 @@ const TradingHistoryTable = ({ data }) => {
         <thead>
           <tr>
             <th>Time</th>
-            <th>Pair</th>
-            <th>Side</th>
-            <th>Price</th>
+            <th>Asset Name</th>
+            <th>Transaction Type</th>
             <th>Amount</th>
-            <th>Total</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((row, index) => (
-            <tr key={index}>
-              <td style={renderRowStyle(row)}>{row.time}</td>
-              <td style={renderRowStyle(row)}>{row.pair}</td>
-              <td style={renderRowStyle(row)}>{row.side}</td>
-              <td style={renderRowStyle(row)}>{row.price}</td>
-              <td style={renderRowStyle(row)}>{row.amount}</td>
-              <td style={renderRowStyle(row)}>{row.total}</td>
+          {data.map((row) => (
+            <tr key={row.transactionHash}>
+              <td style={renderCellStyle(row.time)}>{row.time}</td>
+              <td style={renderCellStyle(row.assetName)}>{row.assetName}</td>
+              <td style={renderCellStyle(row.transactionType)}>
+                {row.transactionType}
+              </td>
+              <td style={renderCellStyle(row.amount)}>{row.amount}</td>
+              <td style={renderCellStyle(row.status)}>{row.status}</td>
             </tr>
           ))}
         </tbody>
@@ -49,22 +50,30 @@ export default TradingHistoryTable;
 // Sample usage (import from another file):
 
 // const sampleData = [
-//   {
-//     time: "2024-02-03 10:00:00",
-//     pair: "BTC/USD",
-//     side: "Buy",
-//     price: 50000,
-//     amount: 1,
-//     total: 50000,
-//   },
-//   {
-//     time: "2024-02-03 11:30:00",
-//     pair: "ETH/USD",
-//     side: "Sell",
-//     price: 3000,
-//     amount: 2,
-//     total: 6000,
-//   },
+// {
+//   transactionHash: "0xabc123...",
+//   time: "2024-02-03 10:30 AM",
+//   assetName: "BTC",
+//   transactionType: "Buy",
+//   amount: 2.5,
+//   status: "Completed",
+// },
+// {
+//   transactionHash: "0xdef456...",
+//   time: "2024-02-03 11:45 AM",
+//   assetName: "ETH",
+//   transactionType: "Sell",
+//   amount: 5.0,
+//   status: "Pending",
+// },
+// {
+//   transactionHash: "0xghi789...",
+//   time: "2024-02-03 01:15 PM",
+//   assetName: "XRP",
+//   transactionType: "Buy",
+//   amount: 3.0,
+//   status: "Completed",
+// },
 // ];
 
 // function Example() {
