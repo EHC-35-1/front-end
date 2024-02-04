@@ -13,13 +13,17 @@ function Profile() {
               <div className="col-lg-4">
                 <div className="card mb-4">
                   <div className="card-body text-center">
-                    {/* <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                    <img
+                      src="https://mahou-bucket.s3.amazonaws.com/magicology/mah_anisphia.jpg"
                       alt="avatar"
                       className="rounded-circle img-fluid"
-                      style="width: 150px;"
-                    /> */}
-                    <h5 className="my-3">John Smith</h5>
+                      style={{
+                        width: "150px",
+                        height: "150px",
+                        objectFit: "cover",
+                      }}
+                    />
+                    <h5 className="my-3">Anisphia</h5>
                     <p className="text-muted mb-1">Full Stack Developer</p>
                     <p className="text-muted mb-4">
                       Bay Area, San Francisco, CA
@@ -42,23 +46,25 @@ function Profile() {
                     <ul className="list-group list-group-flush rounded-3">
                       <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                         <i className="fas fa-globe fa-lg text-warning"></i>
-                        <p className="mb-0">https://mdbootstrap.com</p>
+                        <p className="mb-0">
+                          https://github.com/mahou-anisphia
+                        </p>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                         <i
                           className="fab fa-github fa-lg"
                           style={{ backgroundColor: "#333333" }}
                         ></i>
-                        <p className="mb-0">mdbootstrap</p>
+                        <p className="mb-0">anisphia_hate_coins</p>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                         <i
                           className="fab fa-twitter fa-lg"
                           style={{ backgroundColor: "#55acee" }}
                         ></i>
-                        <p className="mb-0">@mdbootstrap</p>
+                        <p className="mb-0">@nocoinformahou</p>
                       </li>
-                      <li className="list-group-item d-flex justify-content-between align-items-center p-3">
+                      {/* <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                         <i
                           className="fab fa-instagram fa-lg"
                           style={{ backgroundColor: "#ac2bac" }}
@@ -71,7 +77,7 @@ function Profile() {
                           style={{ backgroundColor: "#b5998" }}
                         ></i>
                         <p className="mb-0">mdbootstrap</p>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -84,7 +90,9 @@ function Profile() {
                         <p className="mb-0">Full Name</p>
                       </div>
                       <div className="col-sm-9">
-                        <p className="text-muted mb-0">Johnatan Smith</p>
+                        <p className="text-muted mb-0">
+                          Anisphia Wynn Palettia
+                        </p>
                       </div>
                     </div>
                     <hr></hr>
@@ -93,7 +101,9 @@ function Profile() {
                         <p className="mb-0">Email</p>
                       </div>
                       <div className="col-sm-9">
-                        <p className="text-muted mb-0">example@example.com</p>
+                        <p className="text-muted mb-0">
+                          lycoreco2005@gmail.com
+                        </p>
                       </div>
                     </div>
                     <hr></hr>
@@ -128,7 +138,99 @@ function Profile() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-12">
+                    <div className="card mb-4 mb-md-0">
+                      <div className="card-body">
+                        <p className="mb-4">
+                          <span className="text-primary font-italic me-1">
+                            User Details
+                          </span>{" "}
+                          {/* Privilege */}
+                        </p>
+                        <p className="mb-1" style={{ fontSize: ".77rem" }}>
+                          Trade Progress
+                        </p>
+                        <div
+                          className="progress rounded"
+                          style={{ height: "5px" }}
+                        >
+                          <div
+                            className="progress-bar"
+                            role="progressbar"
+                            style={{ width: "80%" }}
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        {/* <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
+                          Website Markup
+                        </p>
+                        <div
+                          className="progress rounded"
+                          style={{ height: "5px" }}
+                        >
+                          <div
+                            className="progress-bar"
+                            role="progressbar"
+                            style={{ width: "72%" }}
+                            aria-valuenow="72"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
+                          One Page
+                        </p>
+                        <div
+                          className="progress rounded"
+                          style={{ height: "5px" }}
+                        >
+                          <div
+                            className="progress-bar"
+                            role="progressbar"
+                            style={{ width: "89%" }}
+                            aria-valuenow="89"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
+                          Mobile Template
+                        </p>
+                        <div
+                          className="progress rounded"
+                          style={{ height: "5px" }}
+                        >
+                          <div
+                            className="progress-bar"
+                            role="progressbar"
+                            style={{ width: "55%" }}
+                            aria-valuenow="55"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
+                          Backend API
+                        </p>
+                        <div
+                          className="progress rounded mb-2"
+                          style={{ height: "5px" }}
+                        >
+                          <div
+                            className="progress-bar"
+                            role="progressbar"
+                            style={{ width: "66%" }}
+                            aria-valuenow="66"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>{" "} */}
+                      </div>
+                    </div>
+                  </div>
+                  {/* <div className="col-md-6">
                     <div className="card mb-4 mb-md-0">
                       <div className="card-body">
                         <p className="mb-4">
@@ -219,99 +321,7 @@ function Profile() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card mb-4 mb-md-0">
-                      <div className="card-body">
-                        <p className="mb-4">
-                          <span className="text-primary font-italic me-1">
-                            assignment
-                          </span>{" "}
-                          Project Status
-                        </p>
-                        <p className="mb-1" style={{ fontSize: ".77rem" }}>
-                          Web Design
-                        </p>
-                        <div
-                          className="progress rounded"
-                          style={{ height: "5px" }}
-                        >
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "80%" }}
-                            aria-valuenow="80"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
-                          Website Markup
-                        </p>
-                        <div
-                          className="progress rounded"
-                          style={{ height: "5px" }}
-                        >
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "72%" }}
-                            aria-valuenow="72"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
-                          One Page
-                        </p>
-                        <div
-                          className="progress rounded"
-                          style={{ height: "5px" }}
-                        >
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "89%" }}
-                            aria-valuenow="89"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
-                          Mobile Template
-                        </p>
-                        <div
-                          className="progress rounded"
-                          style={{ height: "5px" }}
-                        >
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "55%" }}
-                            aria-valuenow="55"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>
-                          Backend API
-                        </p>
-                        <div
-                          className="progress rounded mb-2"
-                          style={{ height: "5px" }}
-                        >
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "66%" }}
-                            aria-valuenow="66"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
