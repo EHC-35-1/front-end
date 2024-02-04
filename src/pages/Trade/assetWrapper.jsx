@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { images } from "~/assets";
-import { Container } from "react-bootstrap";
+import { Container, InputGroup, FormControl } from "react-bootstrap";
 import DisplayAssetRow from "./displayAssetRow";
 
 const AssetWrapper = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
   const firstRowData = [
     {
       imageSrc: images.asset1,
@@ -52,8 +55,17 @@ const AssetWrapper = () => {
   return (
     <Container className="justify-content-center text-center">
       <h2>Available Assets</h2>
-      <DisplayAssetRow cardsData={firstRowData} />
-      <DisplayAssetRow cardsData={secondRowData} />
+      {/* Search Bar */}
+      <InputGroup className="mb-3">
+        <FormControl
+          placeholder="Search assets..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </InputGroup>
+      {/* Asset Rows */}
+      <DisplayAssetRow cardsData={firstRowData} searchTerm={searchTerm} />
+      <DisplayAssetRow cardsData={secondRowData} searchTerm={searchTerm} />
     </Container>
   );
 };

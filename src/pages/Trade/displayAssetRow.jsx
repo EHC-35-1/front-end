@@ -1,10 +1,16 @@
 import { Row, Col } from "react-bootstrap";
 import CardComponent from "./assetCard";
 
-const DisplayAssetRow = ({ cardsData }) => {
+const DisplayAssetRow = ({ cardsData, searchTerm }) => {
+  const filteredCards = searchTerm
+    ? cardsData.filter((card) =>
+        card.name.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    : cardsData;
+
   return (
     <Row className="mb-3">
-      {cardsData.map((card, index) => (
+      {filteredCards.map((card, index) => (
         <Col key={index} md={3}>
           <CardComponent
             imageSrc={card.imageSrc}
