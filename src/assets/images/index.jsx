@@ -1,5 +1,10 @@
+// Logo
+import logo from "./logo.png";
+// Not Found
 import notFound from "~/assets/images/notFound.jpg";
-
+// Trade
+import asset1 from "./asset1.jpg";
+// Project Insights
 import bank from "./bank.svg";
 import spy from "./spy.svg";
 import shield from "./shield.svg";
@@ -11,16 +16,18 @@ import doge from "./doge.svg";
 import dtp from "./DTP.png";
 
 const images = {
-    notFound,
-    bank,
-    spy,
-    shield,
-    blockchain,
-    bitcoin,
-    bnb,
-    usdc,
-    doge,
-    dtp,
+  notFound,
+  logo,
+  asset1,
+  bank,
+  spy,
+  shield,
+  blockchain,
+  bitcoin,
+  bnb,
+  usdc,
+  doge,
+  dtp,
 };
 
 export default images;

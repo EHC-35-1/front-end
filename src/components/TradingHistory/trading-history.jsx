@@ -11,7 +11,7 @@ const TradingHistoryTable = ({ data }) => {
   const columnWidth = `${100 / columnNum}%`;
 
   return (
-    <div className="mt-4 table-responsive">
+    <div className="mt-3 table-responsive">
       <table className="table table-fixed">
         <colgroup>
           {[...Array(columnNum)].map((_, index) => (
@@ -20,23 +20,35 @@ const TradingHistoryTable = ({ data }) => {
         </colgroup>
         <thead>
           <tr>
-            <th>Time</th>
-            <th>Asset Name</th>
-            <th>Transaction Type</th>
-            <th>Amount</th>
-            <th>Status</th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Time
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Asset Name
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Transaction Type
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Amount
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Status
+            </th>
           </tr>
         </thead>
         <tbody>
           {data.map((row) => (
             <tr key={row.transactionHash}>
-              <td style={renderCellStyle(row.time)}>{row.time}</td>
-              <td style={renderCellStyle(row.assetName)}>{row.assetName}</td>
+              <td style={renderCellStyle(row.transactionType)}>{row.time}</td>
+              <td style={renderCellStyle(row.transactionType)}>
+                {row.assetName}
+              </td>
               <td style={renderCellStyle(row.transactionType)}>
                 {row.transactionType}
               </td>
-              <td style={renderCellStyle(row.amount)}>{row.amount}</td>
-              <td style={renderCellStyle(row.status)}>{row.status}</td>
+              <td style={renderCellStyle(row.transactionType)}>{row.amount}</td>
+              <td style={renderCellStyle(row.transactionType)}>{row.status}</td>
             </tr>
           ))}
         </tbody>
@@ -46,41 +58,3 @@ const TradingHistoryTable = ({ data }) => {
 };
 
 export default TradingHistoryTable;
-
-// Sample usage (import from another file):
-
-// const sampleData = [
-// {
-//   transactionHash: "0xabc123...",
-//   time: "2024-02-03 10:30 AM",
-//   assetName: "BTC",
-//   transactionType: "Buy",
-//   amount: 2.5,
-//   status: "Completed",
-// },
-// {
-//   transactionHash: "0xdef456...",
-//   time: "2024-02-03 11:45 AM",
-//   assetName: "ETH",
-//   transactionType: "Sell",
-//   amount: 5.0,
-//   status: "Pending",
-// },
-// {
-//   transactionHash: "0xghi789...",
-//   time: "2024-02-03 01:15 PM",
-//   assetName: "XRP",
-//   transactionType: "Buy",
-//   amount: 3.0,
-//   status: "Completed",
-// },
-// ];
-
-// function Example() {
-//   return (
-//     <>
-//       <h1>Trading History</h1>
-//       <TradingHistoryTable data={sampleData} />
-//     </>
-//   );
-// }
