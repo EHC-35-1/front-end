@@ -4,8 +4,8 @@ function Profile() {
         <h3>This is profile page</h3>
         <h3>This is description about profile page</h3>
         <h3>This is the end of profile page</h3>
-        </div>;
-
+      <h1>Hello World</h1>
+    </ div>;
 }
 
 export default Profile;
