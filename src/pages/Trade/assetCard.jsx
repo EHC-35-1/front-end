@@ -1,6 +1,6 @@
 import { Card, Button, Col, Row } from "react-bootstrap";
 
-const CardComponent = ({ imageSrc, name, price, onBuyClick }) => {
+const CardComponent = ({ imageSrc, name, price, tvl, volume, onBuyClick }) => {
   return (
     <Card style={{ width: "18rem", borderRadius: "15px" }}>
       <div
@@ -19,7 +19,17 @@ const CardComponent = ({ imageSrc, name, price, onBuyClick }) => {
             <Card.Title>{name}</Card.Title>
           </Col>
           <Col md={6} className="text-right">
-            <Card.Text>{price}</Card.Text>
+            <Card.Text>${price}</Card.Text>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12}>
+            <Card.Text>TVL: {tvl}</Card.Text>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12}>
+            <Card.Text>Volume: {volume}</Card.Text>
           </Col>
         </Row>
         <Button variant="primary" onClick={onBuyClick}>
