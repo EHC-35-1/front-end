@@ -34,7 +34,7 @@ function Header() {
 
         {/* Navigation Links */}
         <div className="collapse navbar-collapse" id="navbarCollapse">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
@@ -52,6 +52,16 @@ function Header() {
             </li>
             <li className="nav-item" onClick={toggleTheme}>
               <button className="nav-link">Toggle Theme</button>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-success" to="/login">
+                Login
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-danger" to="/register">
+                Register
+              </Link>
             </li>
           </ul>
         </div>
