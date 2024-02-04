@@ -30,13 +30,15 @@ const TradingHistoryTable = ({ data }) => {
         <tbody>
           {data.map((row) => (
             <tr key={row.transactionHash}>
-              <td style={renderCellStyle(row.time)}>{row.time}</td>
-              <td style={renderCellStyle(row.assetName)}>{row.assetName}</td>
+              <td style={renderCellStyle(row.transactionType)}>{row.time}</td>
+              <td style={renderCellStyle(row.transactionType)}>
+                {row.assetName}
+              </td>
               <td style={renderCellStyle(row.transactionType)}>
                 {row.transactionType}
               </td>
-              <td style={renderCellStyle(row.amount)}>{row.amount}</td>
-              <td style={renderCellStyle(row.status)}>{row.status}</td>
+              <td style={renderCellStyle(row.transactionType)}>{row.amount}</td>
+              <td style={renderCellStyle(row.transactionType)}>{row.status}</td>
             </tr>
           ))}
         </tbody>
