@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { images } from "~/assets";
 import { useTheme } from "../../ThemeContext";
 
 // eslint-disable-next-line react/prop-types
@@ -14,9 +15,14 @@ function Header() {
         <Link
           className="navbar-brand fw-bold fs-1"
           to="/"
-          style={{ color: "#169bfa" }}
+          style={{ color: "#169bfa", display: "flex", alignItems: "center" }}
         >
-          Methaptamin
+          <img
+            src={images.logo}
+            alt="Logo"
+            style={{ height: "40px", width: "40px", marginRight: "5px" }}
+          />
+          Crystal Swap
         </Link>
 
         {/* Settings Icon Button for Smaller Screens */}

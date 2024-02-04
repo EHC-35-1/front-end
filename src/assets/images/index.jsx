@@ -1,3 +1,5 @@
+// Logo
+import logo from "./logo.png";
 // Not Found
 import notFound from "~/assets/images/notFound.jpg";
 // Trade
@@ -15,6 +17,7 @@ import dtp from "./DTP.png";
 
 const images = {
   notFound,
+  logo,
   asset1,
   bank,
   spy,
