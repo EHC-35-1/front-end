@@ -24,12 +24,12 @@ const CardComponent = ({ imageSrc, name, price, tvl, volume, onBuyClick }) => {
         </Row>
         <Row>
           <Col md={12}>
-            <Card.Text>TVL: {tvl}</Card.Text>
+            <Card.Text>{tvl}</Card.Text>
           </Col>
         </Row>
         <Row>
           <Col md={12}>
-            <Card.Text>Volume: {volume}</Card.Text>
+            <Card.Text>{volume}</Card.Text>
           </Col>
         </Row>
         <Button variant="primary" onClick={onBuyClick}>
