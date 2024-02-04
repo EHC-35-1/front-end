@@ -1,13 +1,18 @@
 import { Button, Card, ListGroup } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import Axios from "axios";
 
 function Confirmation({ formData, setPage }) {
   const { userEmail, userPassword, firstName, lastName, nation } = formData;
+  const navigate = useNavigate();
 
   const handleSubmit = async () => {
     try {
       const response = await Axios.post("http://localhost:3000", formData);
       console.log("Submission successful:", response.data);
+
+      // Redirect to the home page
+      navigate("/");
     } catch (error) {
       console.error("Error submitting form:", error);
     }

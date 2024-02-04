@@ -99,7 +99,6 @@ function CreateAccount({ formData, setFormData, setPage }) {
   return (
     <>
       <Form.Group className="mb-3" controlId="userEmail">
-        <Form.Label>Email address</Form.Label>
         <Form.Control
           required
           type="email"
@@ -114,7 +113,6 @@ function CreateAccount({ formData, setFormData, setPage }) {
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="userPassword">
-        <Form.Label>Password</Form.Label>
         <Form.Control
           required
           type="password"
