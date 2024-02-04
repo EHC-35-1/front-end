@@ -1,8 +1,14 @@
 import AssetWrapper from "./assetWrapper";
+import { useTheme } from "~/layouts/ThemeContext";
 import TradingHistoryTable from "~/components/TradingHistory/trading-history";
 import { Row, Col } from "react-bootstrap";
 
 function TradePage() {
+  const { isDarkTheme, toggleTheme } = useTheme();
+  const themeClass = isDarkTheme
+    ? "text-bg-dark bg-dark"
+    : "text-bg-light bg-body";
+
   const sampleData = [
     {
       transactionHash: "0xabc123...",
@@ -31,11 +37,11 @@ function TradePage() {
   ];
 
   return (
-    <div className="mt-4 mx-2">
+    <div className={`mx-2 ${themeClass}`}>
       <AssetWrapper />
       <Row>
         <Col>
-          <h2>Transaction History</h2>
+          <h2 className="text-center fw-bold">Transaction History</h2>
         </Col>
       </Row>
       <Row>
