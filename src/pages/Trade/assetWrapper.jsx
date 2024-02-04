@@ -8,25 +8,21 @@ const AssetWrapper = () => {
       imageSrc: images.asset1,
       name: "Asset 1",
       price: 20,
-      coinSymbol: "BTC",
     },
     {
       imageSrc: images.asset1,
       name: "Asset 2",
       price: 30,
-      coinSymbol: "ETH",
     },
     {
       imageSrc: images.asset1,
       name: "Asset 3",
       price: 25,
-      coinSymbol: "LTC",
     },
     {
       imageSrc: images.asset1,
       name: "Asset 4",
       price: 40,
-      coinSymbol: "XRP",
     },
   ];
 
@@ -35,25 +31,21 @@ const AssetWrapper = () => {
       imageSrc: images.asset1,
       name: "Asset 5",
       price: 50,
-      coinSymbol: "ETH",
     },
     {
       imageSrc: images.asset1,
       name: "Asset 6",
       price: 35,
-      coinSymbol: "LTC",
     },
     {
       imageSrc: images.asset1,
       name: "Asset 7",
       price: 45,
-      coinSymbol: "BTC",
     },
     {
       imageSrc: images.asset1,
       name: "Asset 8",
       price: 55,
-      coinSymbol: "ETH",
     },
   ];
 

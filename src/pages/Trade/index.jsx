@@ -9,7 +9,7 @@ function TradePage() {
       time: "2024-02-03 10:30 AM",
       assetName: "Methapmin Prenium Image",
       transactionType: "Buy",
-      amount: "2.5 BTC",
+      amount: "2.5 MTTP",
       status: "Completed",
     },
     {
@@ -17,7 +17,7 @@ function TradePage() {
       time: "2024-02-03 11:45 AM",
       assetName: "Rare Elgoog logo",
       transactionType: "Sell",
-      amount: "5.0 ETH",
+      amount: "5.0 MTTP",
       status: "Pending",
     },
     {
@@ -25,7 +25,7 @@ function TradePage() {
       time: "2024-02-03 01:15 PM",
       assetName: "Doge meme",
       transactionType: "Buy",
-      amount: "3.0 XRP",
+      amount: "3.0 MTTP",
       status: "Completed",
     },
   ];

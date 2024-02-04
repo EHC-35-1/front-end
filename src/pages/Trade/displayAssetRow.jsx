@@ -9,7 +9,7 @@ const DisplayAssetRow = ({ cardsData }) => {
           <CardComponent
             imageSrc={card.imageSrc}
             name={card.name}
-            price={`${card.price} ${card.coinSymbol}`}
+            price={`${card.price} MTTP`}
             onBuyClick={() => console.log(`Buying ${card.name}`)}
           />
         </Col>
