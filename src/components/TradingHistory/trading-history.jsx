@@ -11,7 +11,7 @@ const TradingHistoryTable = ({ data }) => {
   const columnWidth = `${100 / columnNum}%`;
 
   return (
-    <div className="mt-4 table-responsive">
+    <div className="mt-3 table-responsive">
       <table className="table table-fixed">
         <colgroup>
           {[...Array(columnNum)].map((_, index) => (
@@ -20,11 +20,21 @@ const TradingHistoryTable = ({ data }) => {
         </colgroup>
         <thead>
           <tr>
-            <th>Time</th>
-            <th>Asset Name</th>
-            <th>Transaction Type</th>
-            <th>Amount</th>
-            <th>Status</th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Time
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Asset Name
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Transaction Type
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Amount
+            </th>
+            <th style={{ backgroundColor: "#2980b9", color: "#ffffff" }}>
+              Status
+            </th>
           </tr>
         </thead>
         <tbody>
