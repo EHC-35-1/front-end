@@ -54,7 +54,7 @@ const AssetWrapper = () => {
 
   return (
     <Container className="justify-content-center text-center">
-      <h2>Available Assets</h2>
+      <h2 className="fw-bold">Available Assets</h2>
       {/* Search Bar */}
       <InputGroup className="mb-3">
         <FormControl
