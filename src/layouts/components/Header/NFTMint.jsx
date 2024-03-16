@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { ethers } from "ethers";
 
 function NFTMintButton() {
-  let address, provider;
+  let address, signer, provider;
 
   const [isConnected, toggleConnected] = useState(0);
 
@@ -28,10 +28,15 @@ function NFTMintButton() {
 
   async function connectWallet() {
     provider = new ethers.BrowserProvider(window.ethereum);
-    // Prompt user for account connections
-    const res = await provider.send("eth_requestAccounts", []);
-    signer = provider.getSigner();
-    setAddress(res);
+    try {
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      const accounts = await provider.listAccounts();
+      setAddress(accounts[0]);
+      const balance = await provider.getBalance(accounts[0]);
+      console.log(balance);
+    } catch (error) {
+      console.error("Error connecting wallet:", error);
+    }
   }
 
   return (
