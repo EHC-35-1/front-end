@@ -1,72 +1,25 @@
 import { useState } from "react";
-import { images } from "~/assets";
 import { Container, InputGroup, FormControl } from "react-bootstrap";
+import { images } from "~/assets";
 import DisplayAssetRow from "./displayAssetRow";
+import assetData from "./assetData.json";
 
 const AssetWrapper = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const firstRowData = [
-    {
-      imageSrc: images.asset1,
-      name: "Token A",
-      price: 20,
-      tvl: "100M",
-      volume: "50M",
-    },
-    {
-      imageSrc: images.asset1,
-      name: "Token B",
-      price: 30,
-      tvl: "150M",
-      volume: "40M",
-    },
-    {
-      imageSrc: images.asset1,
-      name: "Token C",
-      price: 25,
-      tvl: "80M",
-      volume: "60M",
-    },
-    {
-      imageSrc: images.asset1,
-      name: "Token D",
-      price: 40,
-      tvl: "120M",
-      volume: "70M",
-    },
-  ];
+  const modifiedAssetData = assetData.map((asset) => ({
+    ...asset,
+    imageSrc: getImage(asset.imageSrc),
+  }));
 
-  const secondRowData = [
-    {
-      imageSrc: images.asset1,
-      name: "Token E",
-      price: 50,
-      tvl: "200M",
-      volume: "90M",
-    },
-    {
-      imageSrc: images.asset1,
-      name: "Token F",
-      price: 35,
-      tvl: "110M",
-      volume: "30M",
-    },
-    {
-      imageSrc: images.asset1,
-      name: "Token G",
-      price: 45,
-      tvl: "130M",
-      volume: "80M",
-    },
-    {
-      imageSrc: images.asset1,
-      name: "Token H",
-      price: 55,
-      tvl: "180M",
-      volume: "65M",
-    },
-  ];
+  function getImage(imageName) {
+    switch (imageName) {
+      case "asset1":
+        return images.asset1;
+      default:
+        return null;
+    }
+  }
 
   return (
     <Container className="justify-content-center text-center">
@@ -80,8 +33,7 @@ const AssetWrapper = () => {
         />
       </InputGroup>
       {/* Asset Rows */}
-      <DisplayAssetRow cardsData={firstRowData} searchTerm={searchTerm} />
-      <DisplayAssetRow cardsData={secondRowData} searchTerm={searchTerm} />
+      <DisplayAssetRow rowData={modifiedAssetData} searchTerm={searchTerm} />
     </Container>
   );
 };
