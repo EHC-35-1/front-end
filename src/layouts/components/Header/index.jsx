@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { images } from "~/assets";
 import { useTheme } from "../../ThemeContext";
+import NFTMintButton from "./NFTMint"; // Assuming NFTMint.jsx is in the same folder
 
 // eslint-disable-next-line react/prop-types
 function Header() {
@@ -81,6 +82,9 @@ function Header() {
               <Link className="nav-link text-danger" to="/register">
                 Register
               </Link>
+            </li>
+            <li className="nav-item">
+              <NFTMintButton /> {/* Include the NFTMintButton component */}
             </li>
           </ul>
         </div>
